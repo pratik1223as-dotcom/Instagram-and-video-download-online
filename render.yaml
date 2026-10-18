@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: grabnest-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    envVars:
+      - key: ALLOWED_ORIGIN
+        sync: false
